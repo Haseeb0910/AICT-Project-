@@ -1,2 +1,2 @@
-# AICT-Project-
+# AICT-Project
 Website Project
