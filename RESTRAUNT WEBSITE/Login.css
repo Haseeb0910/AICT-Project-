@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Loginbg.jpg);
+    background-size: 100% 740px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+.container{
+    margin-top: 2%;
+    padding: 0 8%;
+    box-sizing: border-box;
+}
+.navbar{
+   height: 12%;
+   align-items: center;
+   display: flex;
+}
+nav{
+   text-align: right;
+   flex:1;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 60px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #999;
+}
+.info{
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    margin: 9% auto;
+}
+.info .about{
+    position: relative;
+    top: 7%;
+}
+.info h1{
+    color: rgb(79, 124, 139);
+    font-size: 35px;
+}
+#username , #password{
+    margin-top: 35px;
+    color: white;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    width: 250px;
+}
+p{
+    margin-top: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+p span{
+    color: rgb(79, 124, 139);
+}
+#forgot:hover{
+    color: rgb(79, 124, 139);
+}
+.about button{
+    background-color: rgb(79, 124, 139);
+    width: 250px;
+    height: 44px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px; 
+}
+button:hover{
+    border: 2px solid rgb(79, 124, 139);
+    background-color: black;
+    color: white;
+}
+@media (max-width: 1200px) {
+    nav ul li {
+        margin-left: 30px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    .info {
+        width: 60%;
+        height: auto;
+        margin: 20% auto;
+        padding: 20px;
+    }
+    .info h1 {
+        font-size: 28px;
+    }
+    #username, #password {
+        width: 90%;
+    }
+    .about button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .info {
+        width: 90%;
+        margin: 15% auto;
+        padding: 15px;
+    }
+    .info h1 {
+        font-size: 24px;
+    }
+    #username, #password {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .about button {
+        font-size: 18px;
+    }
+}

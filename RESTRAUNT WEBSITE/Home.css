@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(BGP.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 8%;
+    box-sizing: border-box;
+}
+.navbar{
+     height: 12%;
+     display: flex;
+     align-items: center;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+nav ul li a button:hover{
+    color: #999;
+}
+nav ul li a:hover{
+    color: #999;
+}
+.row{
+    height: 88%;
+    display: flex;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    font-size: 90px;
+    color: #aeced8;
+}
+p{
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #fff;
+}
+p span{
+    color: red;
+    cursor: pointer;
+}
+button{
+    width: 175px;
+    color: #fff;
+    font-size: 15px;
+    background: red;
+    padding: 12px ;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+.col a{
+    text-decoration: none;
+}
+.menu{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 150px;
+    background-image:  radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(Chinese.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.menu1{
+    background-image: radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(Desi.jpeg);
+    margin-left: 70%;
+}
+.menu2{
+    background-image: radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(Fastfood.jpg);
+    margin-left: 70%;
+}
+.menu4{
+    background-image: radial-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(Dessert.jpeg);
+}
+.menu:hover{
+    transform: translateY(-10px) ;
+}
+h5{
+    font-size: 20px;
+    color: rgb(220, 221, 149);
+    font-style: bold;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 12px;
+        display: inline-block;
+    }
+
+    nav ul li {
+        
+        margin-left: 30px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .menu {
+        width: 150px;
+        height: 200px;
+    }
+
+    button {
+        width: 130px;
+        font-size: 12px;
+    }
+    .col{
+        display: inline-block;
+    }
+}
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        margin: 15px auto;
+    }
+
+    button {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
